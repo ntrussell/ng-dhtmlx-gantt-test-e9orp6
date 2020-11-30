@@ -1,0 +1,11 @@
+<h1>Angular 6 + DHTMLX Gantt Chart (can't use because of GPL)</h1>
+
+<dhtmlx-gantt
+  [data]="data"
+  (taskAdd)="onTaskAdd($event.id, $event.item)"
+  (taskUpdate)="onTaskUpdate($event.id, $event.item)"
+  (taskDelete)="onTaskDelete($event.id)"
+  (linkAdd)="onLinkAdd($event.id, $event.item)"
+  (linkUpdate)="onLinkUpdate($event.id, $event.item)"
+  (linkDelete)="onLinkDelete($event.id)">
+</dhtmlx-gantt>
